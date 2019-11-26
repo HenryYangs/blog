@@ -17,7 +17,7 @@
 
 前六种是原始类型（primitive），而Object（对象）是引用类型。除此之外，其它所有的类型都是从Object继承的。如果想验证一下的话，可以在控制台声明一个引用类型的变量，然后输出这个变量，可以看到，原型链的最末端都是Object
 
-![](./../../assets/images/array.png)
+![](./../../assets/images/type_system/array.png)
 
 可以看到，虽然arr是一个数组类型的变量，但是__proto__仍然指向了Object。
 
@@ -100,7 +100,7 @@ Boolean类型表示的是逻辑真假值，这个类型有两个值 -- true和fa
 
 对于这两个值其实没有太多需要注意的，不过其它任意的类型的值都可以转换成对应的逻辑值
 
-![](./../../assets/images/transform.png)
+![](./../../assets/images/type_system/transform.png)
 
 这些转换规则对于各种流程控制语句中的判断条件是非常重要的。
 
@@ -191,7 +191,7 @@ num.test() // test
 
 众所周知，JavaScript作为动态语言，最大的特点之一就是变量的类型是可以任意转换的，而且我们熟悉的运算几乎都会先进行类型转换。
 
-![图片来自winter的重学前端](./../../assets/images/type_transform.jpg)
+![图片来自winter的重学前端](./../../assets/images/type_system/type_transform.jpg)
 
 上图中大部分的转换是很符合我们的直觉的，比较复杂的Number和String之间的转换，以及对象和基本类型之间的转换。
 
@@ -205,7 +205,7 @@ num.test() // test
 
 Number接受一个参数，并且按照一定的规则判断参数是否可以被转换成数字。
 
-![图片截图自《JavaScript高级程序设计》](./../../assets/images/rule_of_Number.png)
+![图片截图自《JavaScript高级程序设计》](./../../assets/images/type_system/rule_of_Number.png)
 
 从图中就能看出Number函数在内部做了很多判断和操作。
 
